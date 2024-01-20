@@ -45,7 +45,7 @@ class Demo():
                 case "i":
                     set.insert(element)
                 case "c":
-                    print("It is %b that is %s in the set.\n" % (set.is_in(element), element))
+                    print("It is %d that is %s in the set.\n" % (set.is_in(element), element))
                 case "r":
                     set.remove(element)
                 case "q":
