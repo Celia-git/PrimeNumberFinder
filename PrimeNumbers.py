@@ -27,4 +27,12 @@ def primes_list(N):
 
     return primes_list
 
-print(primes_list(100))
+def demo():
+    while True:
+        number = input("Enter a number and see a list of all the prime numbers less than it.\n")
+        if number.isdigit():
+            print(primes_list(number))
+            continue
+        return
+
+demo()
