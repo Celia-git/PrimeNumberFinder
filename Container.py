@@ -37,19 +37,19 @@ class Demo():
     def run_demo(self, set):
         print("New Set\n")
         while True:
-            print("Set Elements: %s" % (set.__str__()))
-            command = input("Enter a command: \n\t i \tinsert an element\n\t c \tcheck if element is in set\n\t r \tremove element from set\n\t q \tquit demo")
-            element = input("Enter an element of any data type")
+            print("Set Elements: \n%s\n" % (set.__str__()))
+            command = input("Enter a command: \n\t i \tinsert an element\n\t c \tcheck if element is in set\n\t r \tremove element from set\n\t q \tquit demo\n")
+            element = input("Enter an element of any data type\n")
                             
             match command:
                 case "i":
                     set.insert(element)
                 case "c":
-                    print("\nIt is %b that is %s in the set." % (set.is_in(element), element))
+                    print("\nIt is %b that is %s in the set.\n" % (set.is_in(element), element))
                 case "r":
                     set.remove(element)
                 case "q":
-                    break
+                    return
 
 Demo()
 
