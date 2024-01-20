@@ -30,8 +30,26 @@ class ASet(Container):
            not subsequently removed, and False otherwise."""
         return e in self.vals.keys()
 
-d1 = ASet()
-d1.insert(4)
-print(d1.is_in(4))
-d1.remove(4)
-print(d1.is_in(4))
+class Demo():
+    def __init__(self):
+        self.run_demo(ASet())
+    
+    def run_demo(self, set):
+        print("New Set\n")
+        while True:
+            print("Set Elements: %s" % (set.__str__))
+            command = input("Enter a command: \n\t i \tinsert an element\n\t c \tcheck if element is in set\n\t r \tremove element from set\n\t q \tquit demo")
+            element = input("Enter an element of any data type")
+                            
+            match command:
+                case "i":
+                    set.insert(element)
+                case "c":
+                    print("\nIt is %b that is %s in the set." % (set.is_in(element), element))
+                case "r":
+                    set.remove(element)
+                case "q":
+                    break
+
+Demo()
+
