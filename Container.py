@@ -39,6 +39,8 @@ class Demo():
         while True:
             print("Set Elements: \n%s" % (set.__str__()))
             command = input("Enter a command: \n\t i \tinsert an element\n\t c \tcheck if element is in set\n\t r \tremove element from set\n\t q \tquit demo\n")
+            if command=="q": return
+            
             element = input("Enter an element of any data type\n")
                             
             match command:
@@ -48,7 +50,7 @@ class Demo():
                     print("It is %s that is %s in the set.\n" % (str(set.is_in(element)), element))
                 case "r":
                     set.remove(element)
-                case "q":
+                case _:
                     return
             print("")
 
