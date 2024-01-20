@@ -25,3 +25,4 @@ def demo():
     print("All Unique entries in the Dict:")
     print(uniqueValues({"apples":"red","bananas":"yellow","oranges":"orange","apples":"green","pomegranates":"red","apples":"yellow","bananas":"green"}))
 
+demo()
