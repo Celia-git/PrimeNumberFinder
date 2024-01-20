@@ -31,7 +31,7 @@ def demo():
     while True:
         number = input("Enter a number and see a list of all the prime numbers less than it.\n")
         if number.isdigit():
-            print(primes_list(number))
+            print(primes_list(int(number)))
             continue
         return
 
