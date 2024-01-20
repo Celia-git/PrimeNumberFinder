@@ -20,4 +20,8 @@ def uniqueValues(aDict):
     
     return keys
 
-print(uniqueValues({1: 1, 2: 1, 3: 1}))
+def demo():
+    print('Sample Dictionary: \n{"apples":"red","bananas":"yellow","oranges":"orange","apples":"green","pomegranates":"red","apples":"yellow","bananas":"green"}\n')
+    print("All Unique entries in the Dict:")
+    print(uniqueValues({"apples":"red","bananas":"yellow","oranges":"orange","apples":"green","pomegranates":"red","apples":"yellow","bananas":"green"}))
+
